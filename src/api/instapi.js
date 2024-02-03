@@ -6,7 +6,8 @@ export const instance = axios.create({
     headers: {
         'accept': 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://localhost:3000',
+        'Access-Control-Allow-Origin': '*',
+        
         'X-InstagAPI-Key': '6d57e908d5f2a034459d1b1038bdb348'
       }
 })
