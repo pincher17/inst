@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import commentsSlice from "./commentsSlice";
+import dataPoster from "./dataPoster";
 
 export const store = configureStore({
   reducer: {
-  allComments: commentsSlice,
+  dataPoster: dataPoster,
   },
   devTools: process.env.NODE_ENV !== "production",
 });

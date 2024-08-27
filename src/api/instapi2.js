@@ -10,7 +10,7 @@ export async function getServerSideProps(shortcode) {
     try {
       const response = await axios.request(options);
       console.log(response.data);
-      dispa
+      
     } catch (error) {
       console.error(error);
     }

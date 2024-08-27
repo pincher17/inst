@@ -2,26 +2,26 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { instAPI } from '../api/instapi';
 
 type initialStateType ={
-    comments: []
+    dataPoster: {}
     limit: number
 }
 
 const initialState: initialStateType ={
-    comments: [],
+    dataPoster: {},
     limit: 10,
 }
 
 const allComments = createSlice({
-    name: 'allComments',
+    name: 'dataPoster',
     initialState,
     reducers: {
-        addComments(state, action:PayloadAction<any>) {
-            state.comments = action.payload;
+        addDataPoster(state, action:PayloadAction<any>) {
+            state.dataPoster = action.payload;
         },
     },
 });
 
-export const {addComments} = allComments.actions;
+export const {addDataPoster} = allComments.actions;
 
 
 /* export const getAllComments = (shortcode: any) =>{
